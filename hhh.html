@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanical Engineering Class</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Mechanical Engineering Class</h1>
+            <nav>
+                <ul>
+                    <li><a href="#notes">Lecture Notes</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search notes or videos...">
+                <button onclick="searchContent()">Search</button>
+            </div>
+            <!-- Dark Mode Toggle -->
+            <button id="darkModeToggle" onclick="toggleDarkMode()">Dark Mode</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Lecture Notes Section -->
+            <section id="notes">
+                <h2>Lecture Notes</h2>
+                <p>Download the latest lecture notes here:</p>
+                <ul id="notesList">
+                    <li><a href="notes/lecture1.pdf" download>Lecture 1: Introduction to Thermodynamics</a></li>
+                    <li><a href="notes/lecture2.pdf" download>Lecture 2: Fluid Mechanics Basics</a></li>
+                    <li><a href="notes/lecture3.pdf" download>Lecture 3: Material Science Fundamentals</a></li>
+                </ul>
+            </section>
+
+            <!-- Videos Section -->
+            <section id="videos">
+                <h2>Videos</h2>
+                <p>Watch the recorded lectures below:</p>
+                <div class="video-container" id="videoContainer">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/example2" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2023 Mechanical Engineering Class | Contact: <a href="mailto:info@example.com">info@example.com</a></p>
+        </div>
+    </footer>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
